@@ -1,1 +1,1 @@
-# ModelViewControllerGoodArchitecturre
+# Model-View-Controller Good Architecture
