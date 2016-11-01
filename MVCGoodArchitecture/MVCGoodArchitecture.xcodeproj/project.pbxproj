@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1378FA1DC8D0BD008F1CDD /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1378F91DC8D0BD008F1CDD /* ToDoItem.swift */; };
 		AD1B1FCA1DC5104C003E255F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B1FC91DC5104C003E255F /* AppDelegate.swift */; };
 		AD1B1FCF1DC5104C003E255F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1B1FCD1DC5104C003E255F /* Main.storyboard */; };
 		AD1B1FD11DC5104C003E255F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1B1FD01DC5104C003E255F /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD1378F91DC8D0BD008F1CDD /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = ../ToDoItem.swift; sourceTree = "<group>"; };
 		AD1B1FC61DC5104C003E255F /* MVCGoodArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCGoodArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1B1FC91DC5104C003E255F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1B1FCE1DC5104C003E255F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD1378FB1DC8D0C6008F1CDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD1378F91DC8D0BD008F1CDD /* ToDoItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		AD1B1FBD1DC5104B003E255F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		AD1B1FC81DC5104C003E255F /* MVCGoodArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				AD1378FB1DC8D0C6008F1CDD /* Model */,
 				AD1B1FC91DC5104C003E255F /* AppDelegate.swift */,
 				AD1B1FCD1DC5104C003E255F /* Main.storyboard */,
 				AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */,
@@ -142,6 +153,7 @@
 			files = (
 				AD1B1FCA1DC5104C003E255F /* AppDelegate.swift in Sources */,
 				AD763E171DC6774B009E3902 /* ToDoListTableViewController.swift in Sources */,
+				AD1378FA1DC8D0BD008F1CDD /* ToDoItem.swift in Sources */,
 				AD763E191DC67761009E3902 /* AddToDoItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
