@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ToDoItem {
+class ToDoItem: NSObject, NSCoding {
     
     let name: String
     let creationDate: NSDate
@@ -19,5 +19,18 @@ struct ToDoItem {
         self.creationDate = creationDate
         self.completed = completed
     }
+    
+    required init(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObject(forKey: "name") as! String
+        creationDate = aDecoder.decodeObject(forKey: "creationDate") as! NSDate
+        completed = aDecoder.decodeObject(forKey: "completed") as! Bool
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(creationDate, forKey: "creationDate")
+        aCoder.encode(completed, forKey: "completed")
+    }
+    
     
 }
