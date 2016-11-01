@@ -21,16 +21,21 @@ class ToDoItem: NSObject, NSCoding {
     }
     
     required init(coder aDecoder: NSCoder) {
-        name = aDecoder.decodeObject(forKey: "name") as! String
-        creationDate = aDecoder.decodeObject(forKey: "creationDate") as! NSDate
-        completed = aDecoder.decodeObject(forKey: "completed") as! Bool
+        name = aDecoder.decodeObject(forKey: CodingKeys.name.rawValue) as! String
+        creationDate = aDecoder.decodeObject(forKey: CodingKeys.creationDate.rawValue) as! NSDate
+        completed = aDecoder.decodeObject(forKey: CodingKeys.completed.rawValue) as! Bool
     }
     
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(name, forKey: "name")
-        aCoder.encode(creationDate, forKey: "creationDate")
-        aCoder.encode(completed, forKey: "completed")
+        aCoder.encode(name, forKey: CodingKeys.name.rawValue)
+        aCoder.encode(creationDate, forKey: CodingKeys.creationDate.rawValue)
+        aCoder.encode(completed, forKey: CodingKeys.completed.rawValue)
     }
     
+    enum CodingKeys: String {
+        case name = "name"
+        case creationDate = "creationDate"
+        case completed = "completed"
+    }
     
 }
