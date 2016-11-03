@@ -8,8 +8,6 @@
 
 import UIKit
 
-let cellIdentifier = "cell"
-
 class ToDoTableViewDataSource: NSObject {
     let modelController: ModelController
     
@@ -28,10 +26,8 @@ extension ToDoTableViewDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = modelController.toDoItems[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-//        cell.name = item.name
-//        cell.completed = item.completed
-//        cell.createdAt = item.creationDate
+        let cell = tableView.dequeueReusableCell(withIdentifier: ToDoItemCell.identifier, for: indexPath) as! ToDoItemCell
+        cell.configure(name: item.name, completed: item.completed)
         return cell
     }
     
