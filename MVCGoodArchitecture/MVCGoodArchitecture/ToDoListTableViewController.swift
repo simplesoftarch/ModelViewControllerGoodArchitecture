@@ -20,6 +20,20 @@ class ToDoListTableViewController: UITableViewController {
             dataSource = ToDoTableViewDataSource(tableView: tableView, modelController: definedModelController)
             delegate = ToDoTableViewDelegate(table: tableView, modelController: definedModelController)
         }
+        tableView.register(ToDoItemCell.self, forCellReuseIdentifier: ToDoItemCell.identifier)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as? UINavigationController {
+            if let addToDoItemViewController = navigationController.viewControllers.first as? AddToDoItemViewController {
+                addToDoItemViewController.modelController = modelController
+            }
+        }
     }
     
     @IBAction func cancel(for unwindSegue: UIStoryboardSegue) {
