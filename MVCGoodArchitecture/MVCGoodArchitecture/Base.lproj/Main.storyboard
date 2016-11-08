@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qrC-1L-cyN" id="Ftf-x8-h56">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -78,6 +78,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="c6t-iF-0fc" id="cz0-oq-AZv"/>
+                        <outlet property="doneButton" destination="4ma-1m-XD2" id="WFc-kn-r3z"/>
+                        <outlet property="taskTitleTextField" destination="RyK-Yc-M26" id="Mrp-qL-JJr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCR-Wv-o3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rOx-0e-MRi" userLabel="Exit" sceneMemberID="exit"/>

@@ -10,6 +10,11 @@ import UIKit
 
 class AddToDoItemViewController: UIViewController {
 
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var taskTitleTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
