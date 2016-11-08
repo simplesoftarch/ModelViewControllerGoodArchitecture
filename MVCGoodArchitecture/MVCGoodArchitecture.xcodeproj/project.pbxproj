@@ -17,6 +17,7 @@
 		AD5A42C91DCBB75200E0BCF1 /* ToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A42C81DCBB75200E0BCF1 /* ToDoItemCell.swift */; };
 		AD763E171DC6774B009E3902 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */; };
 		AD763E191DC67761009E3902 /* AddToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD763E181DC67761009E3902 /* AddToDoItemViewController.swift */; };
+		ADC09C151DD1FC5200270F51 /* ToDoTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC09C141DD1FC5200270F51 /* ToDoTableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AD5A42C81DCBB75200E0BCF1 /* ToDoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemCell.swift; sourceTree = "<group>"; };
 		AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		AD763E181DC67761009E3902 /* AddToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDoItemViewController.swift; sourceTree = "<group>"; };
+		ADC09C141DD1FC5200270F51 /* ToDoTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,17 +76,34 @@
 			isa = PBXGroup;
 			children = (
 				AD1378FB1DC8D0C6008F1CDD /* Model */,
+				ADC09C171DD1FE9800270F51 /* View */,
+				ADC09C161DD1FE8100270F51 /* Controller */,
 				AD1B1FC91DC5104C003E255F /* AppDelegate.swift */,
 				AD1B1FCD1DC5104C003E255F /* Main.storyboard */,
-				AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */,
-				AD5A42C61DCBB0E300E0BCF1 /* ToDoTableViewDataSource.swift */,
-				AD5A42C81DCBB75200E0BCF1 /* ToDoItemCell.swift */,
-				AD763E181DC67761009E3902 /* AddToDoItemViewController.swift */,
 				AD1B1FD01DC5104C003E255F /* Assets.xcassets */,
 				AD1B1FD21DC5104C003E255F /* LaunchScreen.storyboard */,
 				AD1B1FD51DC5104C003E255F /* Info.plist */,
 			);
 			path = MVCGoodArchitecture;
+			sourceTree = "<group>";
+		};
+		ADC09C161DD1FE8100270F51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD763E181DC67761009E3902 /* AddToDoItemViewController.swift */,
+				AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */,
+				AD5A42C61DCBB0E300E0BCF1 /* ToDoTableViewDataSource.swift */,
+				ADC09C141DD1FC5200270F51 /* ToDoTableViewDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ADC09C171DD1FE9800270F51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A42C81DCBB75200E0BCF1 /* ToDoItemCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +181,7 @@
 			files = (
 				AD5A42C91DCBB75200E0BCF1 /* ToDoItemCell.swift in Sources */,
 				AD1B1FCA1DC5104C003E255F /* AppDelegate.swift in Sources */,
+				ADC09C151DD1FC5200270F51 /* ToDoTableViewDelegate.swift in Sources */,
 				AD1378FD1DC8D40B008F1CDD /* ModelController.swift in Sources */,
 				AD5A42C71DCBB0E300E0BCF1 /* ToDoTableViewDataSource.swift in Sources */,
 				AD763E171DC6774B009E3902 /* ToDoListTableViewController.swift in Sources */,
