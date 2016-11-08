@@ -90,10 +90,8 @@
 		ADC09C161DD1FE8100270F51 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AD763E181DC67761009E3902 /* AddToDoItemViewController.swift */,
-				AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */,
-				AD5A42C61DCBB0E300E0BCF1 /* ToDoTableViewDataSource.swift */,
-				ADC09C141DD1FC5200270F51 /* ToDoTableViewDelegate.swift */,
+				ADC09C191DD20C2A00270F51 /* AddToDoItem */,
+				ADC09C181DD20C2000270F51 /* ToDoList */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -104,6 +102,24 @@
 				AD5A42C81DCBB75200E0BCF1 /* ToDoItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		ADC09C181DD20C2000270F51 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				AD763E161DC6774B009E3902 /* ToDoListTableViewController.swift */,
+				AD5A42C61DCBB0E300E0BCF1 /* ToDoTableViewDataSource.swift */,
+				ADC09C141DD1FC5200270F51 /* ToDoTableViewDelegate.swift */,
+			);
+			name = ToDoList;
+			sourceTree = "<group>";
+		};
+		ADC09C191DD20C2A00270F51 /* AddToDoItem */ = {
+			isa = PBXGroup;
+			children = (
+				AD763E181DC67761009E3902 /* AddToDoItemViewController.swift */,
+			);
+			name = AddToDoItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
