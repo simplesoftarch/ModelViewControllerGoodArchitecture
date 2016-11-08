@@ -10,15 +10,15 @@ import UIKit
 
 class ToDoListTableViewController: UITableViewController {
 
-    var modelController: ModelController
+    var modelController: ModelController?
     var dataSource: ToDoTableViewDataSource?
     var delegate: ToDoTableViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let definedModelController = modelController {
-            dataSource = ToDoTableViewDataSource(tableView: tableView, modelController: modelController)
-            delegate = ToDoTableViewDelegate(table: tableView, modelController: modelController)
+            dataSource = ToDoTableViewDataSource(tableView: tableView, modelController: definedModelController)
+            delegate = ToDoTableViewDelegate(table: tableView, modelController: definedModelController)
         }
     }
     
